@@ -1,21 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+//import Coloredscreens from './project/Coloredscreens';
+//import Finally from './src/components/Finally';
+import SmallContainerRow from './src/components/SmallContainerRow';
 
-export default function App() {
+//import SmallContainersComponent from './src/components/SmallContainersComponent';
+const App= ()=> {
+  const colors = ['red', 'blue', 'green', 'yellow','orange','pink','purple','brown'];
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+   <SafeAreaView>
+      <View >
+       <SmallContainersRow colors={colors} />
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+      </View>
+    </SafeAreaView> 
+   // <Text>this is ok</Text>
+    
+  );
+};
+export default App;
